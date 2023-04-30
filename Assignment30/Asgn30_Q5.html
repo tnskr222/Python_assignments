@@ -1,0 +1,21 @@
+<!-- Embed Python swap program in html document
+Note: You can either use C or Python Program  -->
+
+<html>
+    <head>
+        <title>Embedd Python Program</title>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/>
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    </head>
+    <body>
+        <div style ="padding: 10px">
+        <py-script>
+                import datetime as dt
+                hello="<p> Ineuron Python Training</p>"
+                print(hello)
+                pyscript.write('date', dt.date.today().strftime("%A, %B, %d, %Y"))
+        </py-script>
+    <p>Today's date is : <label id ="date"></label></p>
+    </div>
+    </body>
+</html>
